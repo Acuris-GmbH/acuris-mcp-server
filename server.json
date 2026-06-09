@@ -1,19 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.acuris-gmbh/acuris-mcp-server",
+  "name": "io.github.Acuris-GmbH/acuris-mcp-server",
   "description": "Address validation, UK postcode lookup (PAF), geocoding & reverse-geocoding in 240+ countries.",
   "repository": {
     "url": "https://github.com/Acuris-GmbH/acuris-mcp-server",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://www.acuris-geo.com/developers/ai/",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@acuris-geo/mcp-server",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         {

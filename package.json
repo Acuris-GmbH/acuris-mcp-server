@@ -1,6 +1,7 @@
 {
   "name": "@acuris-geo/mcp-server",
-  "version": "0.1.0",
+  "mcpName": "io.github.Acuris-GmbH/acuris-mcp-server",
+  "version": "0.1.1",
   "description": "Model Context Protocol server for Acuris Address Validation & Geocoding. Exposes validate_address, postcode_lookup, geocode, and reverse_geocode as MCP tools — install in Claude Desktop, Claude Code, Cursor, or any MCP-aware client.",
   "type": "module",
   "bin": {

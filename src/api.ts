@@ -36,7 +36,7 @@ export class AcurisClient {
       );
     }
     this.apiKey = opts.apiKey;
-    this.userAgent = opts.userAgent || "acuris-mcp-server/0.1.0";
+    this.userAgent = opts.userAgent || "acuris-mcp-server/0.1.1";
     this.timeoutMs = opts.timeoutMs ?? 15_000;
   }
 

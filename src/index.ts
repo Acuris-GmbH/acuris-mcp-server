@@ -31,7 +31,7 @@ import {
   runReverseGeocode,
 } from "./tools/reverse_geocode.js";
 
-const SERVER_VERSION = "0.1.0";
+const SERVER_VERSION = "0.1.1";
 
 function readApiKey(): string {
   const k =
