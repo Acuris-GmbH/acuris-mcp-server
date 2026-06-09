@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.acuris-gmbh/acuris-mcp-server",
+  "description": "Validate postal addresses, look up UK postcodes (Royal Mail PAF), and geocode / reverse-geocode in 240+ countries via the Acuris API.",
+  "repository": {
+    "url": "https://github.com/Acuris-GmbH/acuris-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://www.acuris-geo.com/developers/ai/",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@acuris-geo/mcp-server",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "ACURIS_API_KEY",
+          "description": "Acuris API key. Get a free key (100 validations + 100 geocodes, 7 days, no card) at https://api.acuris-geo.com/register",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@acuris-geo/mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Acuris Address Validation & Geocoding. Exposes validate_address, postcode_lookup, geocode, and reverse_geocode as MCP tools — install in Claude Desktop, Claude Code, Cursor, or any MCP-aware client.",
+  "type": "module",
+  "bin": {
+    "acuris-mcp-server": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test --enable-source-maps test/*.mjs",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "acuris",
+    "address-validation",
+    "geocoding",
+    "claude",
+    "claude-code",
+    "cursor"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acuris-GmbH/acuris-mcp-server.git"
+  },
+  "license": "MIT",
+  "author": "Acuris GmbH",
+  "homepage": "https://www.acuris-geo.com/developers/ai/"
+}
